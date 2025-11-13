@@ -1,0 +1,42 @@
+{
+    "op": "ArgMin",
+    "input_desc": [
+      {
+        "name": "x",
+        "param_type": "required",
+        "format": ["ND"],
+        "type": [
+          "bfloat16",
+          "float32",
+          "float16",
+          "int32",
+          "int8",
+          "int64",
+          "int16",
+          "uint8"
+        ]
+      }
+    ],
+    "attr_desc": [
+      {
+        "name": "dim",
+        "type": "int",
+        "default_value": null,
+        "param_type": "optional"
+      },
+      {
+        "name": "keepdim",
+        "type": "bool",
+        "default_value": false,
+        "param_type": "optional"
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "y",
+        "param_type": "required",
+        "format": ["ND"],
+        "type": ["int64","int64","int64","int64","int64","int64","int64","int64"]
+      }
+    ]
+  }
